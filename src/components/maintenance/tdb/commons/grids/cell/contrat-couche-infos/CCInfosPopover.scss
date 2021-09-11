@@ -1,0 +1,32 @@
+.cc-infos-popover{
+  //  border: solid 1px #f07;
+    .dx-popup-content{
+  //     border: solid 5px #f00;
+        padding: 0.1rem;
+        .onglet-list{
+            margin: 0;
+            padding: 0.5rem 0 0.2rem 0.4rem;
+            font-size: 0.9rem;
+            list-style: none;
+            .li-onglet{
+                padding: 0;
+                margin: 0;
+                h4{
+                    color: #333;
+                    font-size: 1.0rem;
+                }
+                ul{
+                    list-style: none;
+                    margin-bottom: 0.8rem;
+                    .li-attr{
+                        .lib{color: #777}
+                        .value{color: #000; padding-left: 0.5rem ; font-weight: 500;}
+                    }
+                }
+
+            }
+        }
+    }
+   
+   
+}

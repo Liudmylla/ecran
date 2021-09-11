@@ -1,0 +1,181 @@
+@import "./../../../common.scss";
+
+
+.grid-tdb-intervention{
+
+    .dx-datagrid-rowsview{
+
+        border: none;
+        .dx-row {
+            border: solid 1px #ccc;
+            border-width: 0 1px;
+        }
+    }
+    
+    .dx-datagrid-borders .dx-datagrid-rowsview, .dx-datagrid-headers + .dx-datagrid-rowsview {
+        border-top: none;
+    }
+    
+    .dx-datagrid-borders > .dx-datagrid-filter-panel,
+     .dx-datagrid-borders > .dx-datagrid-headers,
+      .dx-datagrid-borders > .dx-datagrid-pager{
+        border: solid 1px #ccc;
+        border-width: 0 1px;
+        font-size: 0.9rem;
+    }
+    
+
+    border: solid 0px #aaa;
+
+    margin: 0;
+
+    
+    .dx-datagrid-rowsview .dx-datagrid-content .dx-datagrid-table .dx-row > td{
+        padding: 0;
+  
+        &.dx-master-detail-cell{
+            padding: 0;
+        }
+    }
+    
+
+  
+     .dx-datagrid {
+          // background-color: #ccc;
+          background-color: #fff;
+          td,th{
+              border-color: #ccc;
+          }
+      }
+  
+  
+      .dx-datagrid-header-panel {
+          padding: 0;
+          background-color: #aaa;
+      }
+  
+      .dx-datagrid-header-panel .dx-toolbar {
+          margin: 0;
+          padding-right: 0.3rem;
+          background-color: transparent;
+          .dx-toolbar-item{
+              padding: 0 0 0 0.3rem;
+              margin: 0;
+  
+             &.dx-toolbar-item-auto-hide .dx-button {
+                  
+                  border: none;
+                  margin-left: 0.2rem;
+                  @include border-radius(1.1rem);
+  
+                  .dx-button-content{
+                       @include border-radius(1.1rem);
+                       background-color: #ccc;
+                      .dx-icon{
+                          color: #f30;
+                          &.dx-icon-edit-button-save{
+                              & + .dx-button-text{
+                                  display: inline-block;
+                                  color: #000;
+                                  padding: 0 0.3rem 0 0.2rem;
+                              }
+                          }
+                      } 
+                  }
+  
+                  &.dx-state-disabled{  
+                      background-color: #777;
+                      color: #333;
+                      .dx-icon{
+                          color: #333;
+                      }
+                  }
+              }
+          }
+      }
+  
+    //  .dx-toolbar-item-content {
+    //      border: solid 2px #fc0;
+    //  }
+  
+      .dx-datagrid-header-panel .dx-toolbar-items-container  {
+          height: 30px;
+      }
+  
+      .dx-button-mode-contained{
+          margin-top: 0.0rem;
+          border: solid 1px #999;
+          display: inline-block;
+          background-color: #aaa;
+  
+          &.dx-state-hover{
+              background-color: #aaa;
+              border: solid 1px #999;
+          }
+          .dx-button-content{
+              padding: 0.1rem;
+          }
+      }
+      .dx-button-has-text .dx-button-content{
+          padding: 0.1rem 0.5rem;
+          background-color: #bbb;
+          color: #333;
+          font-size: 0.9rem;
+      }
+  
+      // .signalement-toolbar-render-total{
+      //     //border: solid 1px #f00;
+      //     display: inline-block;
+      //     padding: 0.2rem 0.5rem 0 1.0rem;
+      //     color: #777;
+      //     text-align: left;
+      //     min-width: 60px;
+      //     font-size: 1.1rem;
+      //     font-weight: 600;
+      // }
+      .dx-toolbar-text-auto-hide .dx-button .dx-button-content {
+          padding: 0.1rem;
+      }
+  
+      .dx-datagrid-rowsview .dx-data-row .dx-cell-modified.dx-cell-modified::after{
+          border : dashed 2px rgb(177, 162, 158);
+      }
+    
+  
+      .dx-datagrid-content .dx-datagrid-table .dx-row > td.dx-datagrid-group-space, .dx-datagrid-content .dx-datagrid-table .dx-row > tr > td.dx-datagrid-group-space{
+          vertical-align: middle;
+      }
+  
+      .badge-secondary{
+          background-color: #777;
+      }
+  
+      .dx-datagrid-search-panel{
+          .dx-icon-search{
+              padding: 0.55rem 0 0 0;
+              height: 20px;
+          }
+          .dx-placeholder{
+              height: 20px;
+              min-height: 20px;
+              line-height: 3px;
+              font-size: 0.9rem;
+          }
+          .dx-texteditor-input{
+              padding: 0.1rem 0.2rem 0.1rem 2.0rem;
+              height: 20px;
+              min-height: 20px;
+          }
+          .dx-texteditor-buttons-container{
+  
+              height: 20px;
+              .dx-clear-button-area{
+                  height: auto;
+                  .dx-icon-clear{
+                      height: 20px;
+                  }
+              } 
+          }
+        
+      }
+}

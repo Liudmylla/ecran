@@ -1,0 +1,21 @@
+@import "./../common.scss";
+
+.sigmr-maintenance{
+    margin: 0.1rem
+   
+}
+
+.external-popin-called{
+
+    padding: 2.0rem;
+    color: rgb(204, 223, 223);
+    font-size: 0.8rem;
+    font-variant: small-caps;
+    span{
+        cursor: pointer;
+        color: rgb(156, 196, 196);
+        &:hover{
+            color: rgb(255, 68, 68);
+        }
+    }
+}

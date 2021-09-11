@@ -1,0 +1,20 @@
+
+@import "./../../../../../../common.scss";
+
+.equipe-cell-render{
+
+    min-width: 120px;
+    text-align: center;
+    .member-avatar{
+        display: inline-flex;
+        margin: 0 0.1rem;
+        img{
+            flex: 1;
+            max-height: 1.8rem;
+            border: solid 2px #fff;
+            @include border-radius(1.1rem);
+        }
+       
+    }
+}
+

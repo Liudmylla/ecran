@@ -1,0 +1,4424 @@
+{
+    "lstInterventions": [
+      {
+        "lot": null,
+        "dateEcheance": "2020-11-03T00:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": {
+          "libelle": "copie de Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 18,
+          "idLot": 100,
+          "systeme": false,
+          "actif": true,
+          "modele": false,
+          "idPere": 2,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "planification",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": [
+                      {
+                        "idAttribut": "999",
+                        "nomAttribut": "planification",
+                        "operateur": "EQUAL",
+                        "critere": "true",
+                        "critere2": "true",
+                        "enumProvenance": null,
+                        "idFamilleMateriel": null,
+                        "enumTypeAd": null,
+                        "id": 0
+                      }
+                    ],
+                    "commande": "7",
+                    "executionConditionnelle": true,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  7
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  7
+                ],
+                "id": 5
+              },
+              {
+                "libelle": "Planifié",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 7
+              }
+            ]
+          },
+          "idEtatSuivant": 8,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": "2021-01-25T10:29:36+01",
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 6
+        },
+        "etat": {
+          "libelle": "Nouveau",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": [
+            {
+              "typeConsequence": "ETAT",
+              "libelle": "planification",
+              "params": null,
+              "operateur": null,
+              "lstCriteres": [
+                {
+                  "idAttribut": "999",
+                  "nomAttribut": "planification",
+                  "operateur": "EQUAL",
+                  "critere": "true",
+                  "critere2": "true",
+                  "enumProvenance": null,
+                  "idFamilleMateriel": null,
+                  "enumTypeAd": null,
+                  "id": 0
+                }
+              ],
+              "commande": "7",
+              "executionConditionnelle": true,
+              "condition": null,
+              "automatique": false,
+              "lstTypeOrganismes": [
+                "ENTREPRISE",
+                "EXPLOITANT",
+                "SYNDICAT"
+              ],
+              "id": 1
+            }
+          ],
+          "idConsequenceSuivant": 2,
+          "next": [
+            7
+          ],
+          "previous": [
+            3
+          ],
+          "id": 4
+        },
+        "etatIdUser": 41,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 6,
+        "idUser": 0,
+        "idParent": 149,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(907192.835264883 6633666.54948164)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "1",
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": "2020-11-03T00:00:00",
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": "1",
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          },
+          {
+            "value": "DOS 12345 - INTER",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-11-03T16:20:56+01",
+        "dateModification": "2020-11-06T10:36:42+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 150
+      },
+      {
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2020-06-02T00:00:00+02",
+          "fin": "2020-06-02T00:01:00+02",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": {
+          "libelle": "Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 0,
+          "idLot": 0,
+          "systeme": true,
+          "actif": true,
+          "modele": false,
+          "idPere": 0,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 5
+              }
+            ]
+          },
+          "idEtatSuivant": 7,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": null,
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 2
+        },
+        "etat": {
+          "libelle": "Nouveau",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": null,
+          "idConsequenceSuivant": 1,
+          "next": [
+            5
+          ],
+          "previous": [
+            3
+          ],
+          "id": 4
+        },
+        "etatIdUser": 31,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 4,
+        "idUser": 0,
+        "idParent": 129,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(905240.259161354 6633086.00921848)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "foyer qui clignote",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-06-23T08:45:12+02",
+        "dateModification": "2020-12-09T08:55:41+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 131
+      },
+      {
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "INTERVENTION",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": {
+          "libelle": "Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 0,
+          "idLot": 0,
+          "systeme": true,
+          "actif": true,
+          "modele": false,
+          "idPere": 0,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 5
+              }
+            ]
+          },
+          "idEtatSuivant": 7,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": null,
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 2
+        },
+        "etat": {
+          "libelle": "Nouveau",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": null,
+          "idConsequenceSuivant": 1,
+          "next": [
+            5
+          ],
+          "previous": [
+            3
+          ],
+          "id": 4
+        },
+        "etatIdUser": 31,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 129,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(905240.259161354 6633086.00921848)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "intervention sur le foyer",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": "2020-12-09T00:00:00",
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-06-16T17:32:45+02",
+        "dateModification": "2020-12-09T08:55:41+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 130
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2021-01-20T00:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-01-13T00:00:00+01",
+          "fin": "2021-01-13T23:59:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": {
+          "libelle": "copie de Workflow standard",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 18,
+          "idLot": 99,
+          "systeme": false,
+          "actif": true,
+          "modele": false,
+          "idPere": 1,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Mon Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "planification",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": [
+                      {
+                        "idAttribut": "999",
+                        "nomAttribut": "planification",
+                        "operateur": "EQUAL",
+                        "critere": "true",
+                        "critere2": "true",
+                        "enumProvenance": null,
+                        "idFamilleMateriel": null,
+                        "enumTypeAd": null,
+                        "id": 0
+                      }
+                    ],
+                    "commande": "7",
+                    "executionConditionnelle": true,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  7
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  7
+                ],
+                "id": 5
+              },
+              {
+                "libelle": "Planifié",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 7
+              }
+            ]
+          },
+          "idEtatSuivant": 8,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": "2021-01-25T10:28:27+01",
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 5
+        },
+        "etat": {
+          "libelle": "Nouveau",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": [
+            {
+              "typeConsequence": "ETAT",
+              "libelle": "planification",
+              "params": null,
+              "operateur": null,
+              "lstCriteres": [
+                {
+                  "idAttribut": "999",
+                  "nomAttribut": "planification",
+                  "operateur": "EQUAL",
+                  "critere": "true",
+                  "critere2": "true",
+                  "enumProvenance": null,
+                  "idFamilleMateriel": null,
+                  "enumTypeAd": null,
+                  "id": 0
+                }
+              ],
+              "commande": "7",
+              "executionConditionnelle": true,
+              "condition": null,
+              "automatique": false,
+              "lstTypeOrganismes": [
+                "ENTREPRISE",
+                "EXPLOITANT",
+                "SYNDICAT"
+              ],
+              "id": 1
+            }
+          ],
+          "idConsequenceSuivant": 2,
+          "next": [
+            7
+          ],
+          "previous": [
+            3
+          ],
+          "id": 4
+        },
+        "etatIdUser": 41,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 6,
+        "idUser": 0,
+        "idParent": 174,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "MULTIPOINT(889144.051502696 6660820.54352317)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "1",
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": "2021-01-11T00:00:00",
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": "1",
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          },
+          {
+            "value": "inter test UX",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-01-11T10:22:24+01",
+        "dateModification": "2021-01-11T10:22:24+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 175
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2020-09-02T00:00:00+02",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": {
+          "libelle": "copie de Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 18,
+          "idLot": 100,
+          "systeme": false,
+          "actif": true,
+          "modele": false,
+          "idPere": 2,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "planification",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": [
+                      {
+                        "idAttribut": "999",
+                        "nomAttribut": "planification",
+                        "operateur": "EQUAL",
+                        "critere": "true",
+                        "critere2": "true",
+                        "enumProvenance": null,
+                        "idFamilleMateriel": null,
+                        "enumTypeAd": null,
+                        "id": 0
+                      }
+                    ],
+                    "commande": "7",
+                    "executionConditionnelle": true,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  7
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  7
+                ],
+                "id": 5
+              },
+              {
+                "libelle": "Planifié",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 7
+              }
+            ]
+          },
+          "idEtatSuivant": 8,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": "2021-01-25T10:29:36+01",
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 6
+        },
+        "etat": {
+          "libelle": "Nouveau",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": [
+            {
+              "typeConsequence": "ETAT",
+              "libelle": "planification",
+              "params": null,
+              "operateur": null,
+              "lstCriteres": [
+                {
+                  "idAttribut": "999",
+                  "nomAttribut": "planification",
+                  "operateur": "EQUAL",
+                  "critere": "true",
+                  "critere2": "true",
+                  "enumProvenance": null,
+                  "idFamilleMateriel": null,
+                  "enumTypeAd": null,
+                  "id": 0
+                }
+              ],
+              "commande": "7",
+              "executionConditionnelle": true,
+              "condition": null,
+              "automatique": false,
+              "lstTypeOrganismes": [
+                "ENTREPRISE",
+                "EXPLOITANT",
+                "SYNDICAT"
+              ],
+              "id": 1
+            }
+          ],
+          "idConsequenceSuivant": 2,
+          "next": [
+            7
+          ],
+          "previous": [
+            3
+          ],
+          "id": 4
+        },
+        "etatIdUser": 31,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 4,
+        "idUser": 0,
+        "idParent": 136,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "MULTIPOINT(895894.14 6622579.26)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Interventions",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": "2020-11-04T00:00:00",
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-09-01T17:23:39+02",
+        "dateModification": "2021-01-11T10:11:47+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 137
+      },
+      {
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "INTERVENTION",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": {
+          "libelle": "copie de Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 18,
+          "idLot": 100,
+          "systeme": false,
+          "actif": true,
+          "modele": false,
+          "idPere": 2,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "planification",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": [
+                      {
+                        "idAttribut": "999",
+                        "nomAttribut": "planification",
+                        "operateur": "EQUAL",
+                        "critere": "true",
+                        "critere2": "true",
+                        "enumProvenance": null,
+                        "idFamilleMateriel": null,
+                        "enumTypeAd": null,
+                        "id": 0
+                      }
+                    ],
+                    "commande": "7",
+                    "executionConditionnelle": true,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  7
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  7
+                ],
+                "id": 5
+              },
+              {
+                "libelle": "Planifié",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 7
+              }
+            ]
+          },
+          "idEtatSuivant": 8,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": "2021-01-25T10:29:36+01",
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 6
+        },
+        "etat": {
+          "libelle": "Nouveau",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": [
+            {
+              "typeConsequence": "ETAT",
+              "libelle": "planification",
+              "params": null,
+              "operateur": null,
+              "lstCriteres": [
+                {
+                  "idAttribut": "999",
+                  "nomAttribut": "planification",
+                  "operateur": "EQUAL",
+                  "critere": "true",
+                  "critere2": "true",
+                  "enumProvenance": null,
+                  "idFamilleMateriel": null,
+                  "enumTypeAd": null,
+                  "id": 0
+                }
+              ],
+              "commande": "7",
+              "executionConditionnelle": true,
+              "condition": null,
+              "automatique": false,
+              "lstTypeOrganismes": [
+                "ENTREPRISE",
+                "EXPLOITANT",
+                "SYNDICAT"
+              ],
+              "id": 1
+            }
+          ],
+          "idConsequenceSuivant": 2,
+          "next": [
+            7
+          ],
+          "previous": [
+            3
+          ],
+          "id": 4
+        },
+        "etatIdUser": 41,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 4,
+        "idUser": 0,
+        "idParent": 136,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "MULTIPOINT(895894.14 6622579.26,895863.34 6622581.68)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": "2021-01-11T00:00:00",
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          },
+          {
+            "value": "test",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-01-11T10:11:21+01",
+        "dateModification": "2021-01-11T10:11:47+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 172
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2020-10-22T00:00:00+02",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": {
+          "libelle": "copie de Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 18,
+          "idLot": 100,
+          "systeme": false,
+          "actif": true,
+          "modele": false,
+          "idPere": 2,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "planification",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": [
+                      {
+                        "idAttribut": "999",
+                        "nomAttribut": "planification",
+                        "operateur": "EQUAL",
+                        "critere": "true",
+                        "critere2": "true",
+                        "enumProvenance": null,
+                        "idFamilleMateriel": null,
+                        "enumTypeAd": null,
+                        "id": 0
+                      }
+                    ],
+                    "commande": "7",
+                    "executionConditionnelle": true,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  7
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  7
+                ],
+                "id": 5
+              },
+              {
+                "libelle": "Planifié",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 7
+              }
+            ]
+          },
+          "idEtatSuivant": 8,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": "2021-01-25T10:29:36+01",
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 6
+        },
+        "etat": {
+          "libelle": "Terminé",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": [
+            {
+              "typeConsequence": "ETAT",
+              "libelle": "Terminé",
+              "params": null,
+              "operateur": null,
+              "lstCriteres": null,
+              "commande": null,
+              "executionConditionnelle": false,
+              "condition": null,
+              "automatique": false,
+              "lstTypeOrganismes": [
+                "ENTREPRISE",
+                "EXPLOITANT",
+                "SYNDICAT"
+              ],
+              "id": 1
+            }
+          ],
+          "idConsequenceSuivant": 2,
+          "next": [
+            6
+          ],
+          "previous": [
+            7
+          ],
+          "id": 5
+        },
+        "etatIdUser": 41,
+        "historiqueEtat": [
+          {
+            "libelle": "Nouveau",
+            "sousType": "INTERVENTION",
+            "lstTypeOrganismes": [
+              "ENTREPRISE",
+              "EXPLOITANT",
+              "SYNDICAT"
+            ],
+            "lstConsequences": [
+              {
+                "typeConsequence": "ETAT",
+                "libelle": "planification",
+                "params": null,
+                "operateur": null,
+                "lstCriteres": [
+                  {
+                    "idAttribut": "999",
+                    "nomAttribut": "planification",
+                    "operateur": "EQUAL",
+                    "critere": "true",
+                    "critere2": "true",
+                    "enumProvenance": null,
+                    "idFamilleMateriel": null,
+                    "enumTypeAd": null,
+                    "id": 0
+                  }
+                ],
+                "commande": "7",
+                "executionConditionnelle": true,
+                "condition": null,
+                "automatique": false,
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "id": 1
+              }
+            ],
+            "idConsequenceSuivant": 2,
+            "next": [
+              7
+            ],
+            "previous": [
+              3
+            ],
+            "id": 4
+          }
+        ],
+        "isEtatFinal": false,
+        "idEquipe": 6,
+        "idUser": 0,
+        "idParent": 139,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "MULTIPOINT(907102.362643606 6633751.41817685,906969.7631644116 6633647.933802035)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "dossier test CG / panne rue de l\u0027éqglise",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-10-21T15:57:47+02",
+        "dateModification": "2021-01-11T10:13:29+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 140
+      },
+      {
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "INTERVENTION",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 136,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 3857,
+          "wktDef": "MULTIPOINT(895894.14 6622579.26)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Intervention foyer",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-11-04T08:57:31+01",
+        "dateModification": "2021-01-11T10:11:47+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 155
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2020-11-19T00:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-01-04T00:00:00+01",
+          "fin": "2021-01-15T00:00:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": {
+          "libelle": "copie de Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 18,
+          "idLot": 100,
+          "systeme": false,
+          "actif": true,
+          "modele": false,
+          "idPere": 2,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "planification",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": [
+                      {
+                        "idAttribut": "999",
+                        "nomAttribut": "planification",
+                        "operateur": "EQUAL",
+                        "critere": "true",
+                        "critere2": "true",
+                        "enumProvenance": null,
+                        "idFamilleMateriel": null,
+                        "enumTypeAd": null,
+                        "id": 0
+                      }
+                    ],
+                    "commande": "7",
+                    "executionConditionnelle": true,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  7
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  7
+                ],
+                "id": 5
+              },
+              {
+                "libelle": "Planifié",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 7
+              }
+            ]
+          },
+          "idEtatSuivant": 8,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": "2021-01-25T10:29:36+01",
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 6
+        },
+        "etat": {
+          "libelle": "Terminé",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": [
+            {
+              "typeConsequence": "ETAT",
+              "libelle": "Terminé",
+              "params": null,
+              "operateur": null,
+              "lstCriteres": null,
+              "commande": null,
+              "executionConditionnelle": false,
+              "condition": null,
+              "automatique": false,
+              "lstTypeOrganismes": [
+                "ENTREPRISE",
+                "EXPLOITANT",
+                "SYNDICAT"
+              ],
+              "id": 1
+            }
+          ],
+          "idConsequenceSuivant": 2,
+          "next": [
+            6
+          ],
+          "previous": [
+            7
+          ],
+          "id": 5
+        },
+        "etatIdUser": 41,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 4,
+        "idUser": 0,
+        "idParent": 146,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "MULTIPOINT(907197.091003637 6633683.85342626)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Intervention 03/11/2020",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": null,
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-11-03T11:53:44+01",
+        "dateModification": "2021-02-12T11:46:51+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 147
+      },
+      {
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-02-04T00:00:00+01",
+          "fin": "2021-02-08T00:00:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": {
+          "libelle": "copie de Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 18,
+          "idLot": 100,
+          "systeme": false,
+          "actif": true,
+          "modele": false,
+          "idPere": 2,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "planification",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": [
+                      {
+                        "idAttribut": "999",
+                        "nomAttribut": "planification",
+                        "operateur": "EQUAL",
+                        "critere": "true",
+                        "critere2": "true",
+                        "enumProvenance": null,
+                        "idFamilleMateriel": null,
+                        "enumTypeAd": null,
+                        "id": 0
+                      }
+                    ],
+                    "commande": "7",
+                    "executionConditionnelle": true,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  7
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  7
+                ],
+                "id": 5
+              },
+              {
+                "libelle": "Planifié",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 7
+              }
+            ]
+          },
+          "idEtatSuivant": 8,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": "2021-01-25T10:29:36+01",
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 6
+        },
+        "etat": {
+          "libelle": "Terminé",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": [
+            {
+              "typeConsequence": "ETAT",
+              "libelle": "Terminé",
+              "params": null,
+              "operateur": null,
+              "lstCriteres": null,
+              "commande": null,
+              "executionConditionnelle": false,
+              "condition": null,
+              "automatique": false,
+              "lstTypeOrganismes": [
+                "ENTREPRISE",
+                "EXPLOITANT",
+                "SYNDICAT"
+              ],
+              "id": 1
+            }
+          ],
+          "idConsequenceSuivant": 2,
+          "next": [
+            6
+          ],
+          "previous": [
+            7
+          ],
+          "id": 5
+        },
+        "etatIdUser": 41,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 4,
+        "idUser": 0,
+        "idParent": 153,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "MULTIPOINT(906994.578287274 6633761.70868544)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": "2020-11-03T00:00:00",
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          },
+          {
+            "value": "INTER - 1234",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-11-03T17:28:42+01",
+        "dateModification": "2021-02-24T08:35:05+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 154
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2021-03-07T10:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-03-03T09:00:00+01",
+          "fin": "2021-03-07T10:00:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 1,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": null,
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 519
+        },
+        "idStyle": 156,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(903679.852941815 6598273.34363263)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Remplacement lampe",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-03-19T11:44:30+01",
+        "dateModification": "2021-03-19T11:44:30+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 179
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2021-03-09T11:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-03-07T10:00:00+01",
+          "fin": "2021-03-09T11:00:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 1,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": null,
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 519
+        },
+        "idStyle": 156,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(903599.287360323 6598487.65601691)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Remplacement lampe",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-03-19T11:44:30+01",
+        "dateModification": "2021-03-19T11:44:30+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 180
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2021-03-03T09:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-03-01T00:00:00+01",
+          "fin": "2021-03-03T09:00:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 2,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": null,
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 519
+        },
+        "idStyle": 156,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(903617.146725679 6598519.4059997)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Remplacement lampe",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-03-19T11:44:30+01",
+        "dateModification": "2021-03-19T11:44:30+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 181
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2021-03-15T15:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-03-09T11:00:00+01",
+          "fin": "2021-03-15T15:00:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 1,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": null,
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 519
+        },
+        "idStyle": 156,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(903627.232060433 6598542.87337546)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Nettoyage",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-03-19T11:44:30+01",
+        "dateModification": "2021-03-19T11:44:30+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 182
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2021-03-17T16:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-03-15T15:00:00+01",
+          "fin": "2021-03-17T16:00:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 1,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": null,
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 519
+        },
+        "idStyle": 156,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(903630.916855509 6598575.47201812)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Remplacement lampe",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-03-19T11:44:30+01",
+        "dateModification": "2021-03-19T11:44:30+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 183
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2021-03-07T10:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-03-05T09:00:00+01",
+          "fin": "2021-03-09T10:00:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 6,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": null,
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 519
+        },
+        "idStyle": 156,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(903633.33038 6598605.140822)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Remplacement lampe",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-03-19T11:44:30+01",
+        "dateModification": "2021-03-19T11:47:10+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 184
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2021-03-03T09:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": {
+          "typeSQL": "tsrange",
+          "isMinValueInclude": true,
+          "isMaxValueInclude": false,
+          "debut": "2021-03-01T00:00:00+01",
+          "fin": "2021-03-03T09:00:00+01",
+          "type": "tsrange",
+          "value": null
+        },
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 6,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": null,
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 519
+        },
+        "idStyle": 156,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(903678.1588226418 6598306.107388455)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Remplacement lampe",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-03-19T11:44:30+01",
+        "dateModification": "2021-03-19T11:46:25+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 178
+      },
+      {
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "INTERVENTION",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": {
+          "libelle": "copie de Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 18,
+          "idLot": 100,
+          "systeme": false,
+          "actif": true,
+          "modele": false,
+          "idPere": 2,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "planification",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": [
+                      {
+                        "idAttribut": "999",
+                        "nomAttribut": "planification",
+                        "operateur": "EQUAL",
+                        "critere": "true",
+                        "critere2": "true",
+                        "enumProvenance": null,
+                        "idFamilleMateriel": null,
+                        "enumTypeAd": null,
+                        "id": 0
+                      }
+                    ],
+                    "commande": "7",
+                    "executionConditionnelle": true,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  7
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  7
+                ],
+                "id": 5
+              },
+              {
+                "libelle": "Planifié",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 7
+              }
+            ]
+          },
+          "idEtatSuivant": 8,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": "2021-01-25T10:29:36+01",
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 6
+        },
+        "etat": {
+          "libelle": "Nouveau",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": [
+            {
+              "typeConsequence": "ETAT",
+              "libelle": "planification",
+              "params": null,
+              "operateur": null,
+              "lstCriteres": [
+                {
+                  "idAttribut": "999",
+                  "nomAttribut": "planification",
+                  "operateur": "EQUAL",
+                  "critere": "true",
+                  "critere2": "true",
+                  "enumProvenance": null,
+                  "idFamilleMateriel": null,
+                  "enumTypeAd": null,
+                  "id": 0
+                }
+              ],
+              "commande": "7",
+              "executionConditionnelle": true,
+              "condition": null,
+              "automatique": false,
+              "lstTypeOrganismes": [
+                "ENTREPRISE",
+                "EXPLOITANT",
+                "SYNDICAT"
+              ],
+              "id": 1
+            }
+          ],
+          "idConsequenceSuivant": 2,
+          "next": [
+            7
+          ],
+          "previous": [
+            3
+          ],
+          "id": 4
+        },
+        "etatIdUser": 41,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 6,
+        "idUser": 0,
+        "idParent": 142,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "MULTIPOINT(906969.763164412 6633647.93380203)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "1",
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": "2021-01-11T00:00:00",
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          },
+          {
+            "value": "test",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2021-01-11T10:12:08+01",
+        "dateModification": "2021-04-06T12:00:17+02",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 173
+      },
+      {
+        "lot": null,
+        "dateEcheance": "2020-10-29T00:00:00+01",
+        "typeMaint": "INTERVENTION",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": {
+          "libelle": "copie de Workflow par défaut",
+          "workflowType": "Maintenance",
+          "idContratCouche": 0,
+          "idContrat": 18,
+          "idLot": 100,
+          "systeme": false,
+          "actif": true,
+          "modele": false,
+          "idPere": 2,
+          "lstEtat": {
+            "SIGNALEMENT": [
+              {
+                "libelle": "Nouveau SIGNALEMENT",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "Alerte entreprise",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "typeConsequence": "MAIL",
+                    "libelle": "",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  2
+                ],
+                "previous": [],
+                "id": 1
+              },
+              {
+                "libelle": "Pris en compte",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  3
+                ],
+                "previous": [
+                  1
+                ],
+                "id": 2
+              },
+              {
+                "libelle": "Créer une intervention",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "CREATION_INTERVENTION",
+                    "libelle": "Nouveau",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": true,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 2
+                  }
+                ],
+                "idConsequenceSuivant": 3,
+                "next": [
+                  4
+                ],
+                "previous": [
+                  2
+                ],
+                "id": 3
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "SIGNALEMENT",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [],
+                "previous": [
+                  5
+                ],
+                "id": 6
+              }
+            ],
+            "INTERVENTION": [
+              {
+                "libelle": "Nouveau",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "planification",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": [
+                      {
+                        "idAttribut": "999",
+                        "nomAttribut": "planification",
+                        "operateur": "EQUAL",
+                        "critere": "true",
+                        "critere2": "true",
+                        "enumProvenance": null,
+                        "idFamilleMateriel": null,
+                        "enumTypeAd": null,
+                        "id": 0
+                      }
+                    ],
+                    "commande": "7",
+                    "executionConditionnelle": true,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  7
+                ],
+                "previous": [
+                  3
+                ],
+                "id": 4
+              },
+              {
+                "libelle": "Terminé",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT"
+                ],
+                "lstConsequences": [
+                  {
+                    "typeConsequence": "ETAT",
+                    "libelle": "Terminé",
+                    "params": null,
+                    "operateur": null,
+                    "lstCriteres": null,
+                    "commande": null,
+                    "executionConditionnelle": false,
+                    "condition": null,
+                    "automatique": false,
+                    "lstTypeOrganismes": [
+                      "ENTREPRISE",
+                      "EXPLOITANT",
+                      "SYNDICAT"
+                    ],
+                    "id": 1
+                  }
+                ],
+                "idConsequenceSuivant": 2,
+                "next": [
+                  6
+                ],
+                "previous": [
+                  7
+                ],
+                "id": 5
+              },
+              {
+                "libelle": "Planifié",
+                "sousType": "INTERVENTION",
+                "lstTypeOrganismes": [
+                  "AGLOMERATION",
+                  "COMMUNE",
+                  "ENTREPRISE",
+                  "EXPLOITANT",
+                  "SYNDICAT",
+                  "WEB"
+                ],
+                "lstConsequences": null,
+                "idConsequenceSuivant": 1,
+                "next": [
+                  5
+                ],
+                "previous": [
+                  4
+                ],
+                "id": 7
+              }
+            ]
+          },
+          "idEtatSuivant": 8,
+          "dateCreation": "2020-08-28T15:48:40+02",
+          "dateModification": "2021-01-25T10:29:36+01",
+          "dateSuppression": null,
+          "defaultLanguage": null,
+          "id": 6
+        },
+        "etat": {
+          "libelle": "Nouveau",
+          "sousType": "INTERVENTION",
+          "lstTypeOrganismes": [
+            "ENTREPRISE",
+            "EXPLOITANT",
+            "SYNDICAT"
+          ],
+          "lstConsequences": [
+            {
+              "typeConsequence": "ETAT",
+              "libelle": "planification",
+              "params": null,
+              "operateur": null,
+              "lstCriteres": [
+                {
+                  "idAttribut": "999",
+                  "nomAttribut": "planification",
+                  "operateur": "EQUAL",
+                  "critere": "true",
+                  "critere2": "true",
+                  "enumProvenance": null,
+                  "idFamilleMateriel": null,
+                  "enumTypeAd": null,
+                  "id": 0
+                }
+              ],
+              "commande": "7",
+              "executionConditionnelle": true,
+              "condition": null,
+              "automatique": false,
+              "lstTypeOrganismes": [
+                "ENTREPRISE",
+                "EXPLOITANT",
+                "SYNDICAT"
+              ],
+              "id": 1
+            }
+          ],
+          "idConsequenceSuivant": 2,
+          "next": [
+            7
+          ],
+          "previous": [
+            3
+          ],
+          "id": 4
+        },
+        "etatIdUser": 31,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 6,
+        "idUser": 0,
+        "idParent": 142,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 532
+        },
+        "idStyle": 175,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "MULTIPOINT(906969.763164412 6633647.93380203)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "test CG",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 3
+          },
+          {
+            "value": "2021-04-06T00:00:00",
+            "lstAttributs": null,
+            "options": null,
+            "id": 2
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 1
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 4
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 5
+          },
+          {
+            "value": "",
+            "lstAttributs": null,
+            "options": null,
+            "id": 6
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-10-28T11:16:45+01",
+        "dateModification": "2021-04-06T12:00:17+02",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 144
+      }
+    ]
+  }

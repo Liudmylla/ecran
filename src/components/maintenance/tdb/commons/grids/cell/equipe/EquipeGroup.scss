@@ -1,0 +1,16 @@
+.equipe-group-render{
+
+    ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+       // justify-content: space-between;
+        li{
+            padding: 0;
+            list-style: none;
+            &.libelle{
+                padding: 0.3rem 1.5rem;
+            }
+        }
+    }
+}

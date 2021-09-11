@@ -1,0 +1,31 @@
+.cell-intervention-default-render{
+
+    position: relative;
+    padding: 0.2rem 0.1rem 0.2rem 0.8rem;
+    font-size: 0.9rem;
+    color: #777;
+    min-height: 24px;
+    line-height: 19px;
+    &.nouveau{
+        background-color: rgb(121, 167, 204);
+        color: #000;
+    }
+    &.termine{
+        background-color: rgb(252, 220, 78);
+        color: #000;
+    }
+
+    &.editable{
+        color: #000;
+        cursor: pointer;
+    }
+    .cell-intervention-default-render-icon{
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        svg{
+            color: #444;
+        }
+       
+    }
+}

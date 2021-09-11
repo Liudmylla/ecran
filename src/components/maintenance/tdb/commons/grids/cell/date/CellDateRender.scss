@@ -1,0 +1,19 @@
+.cell-date-render{
+
+    position: relative;
+    padding: 0.2rem 0 0 0.2rem;
+    font-size: 1.0rem;
+    color: #777;
+    &.editable{
+        color: #000;
+        cursor: pointer;
+    }
+    .cell-date-render-icon{
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        svg{
+            color: #aaa;
+        }
+    }
+}

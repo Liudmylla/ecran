@@ -1,0 +1,91 @@
+@import "./../../../../../../common.scss";
+
+:root {
+--color-signalements: var(--color3);
+--color-interventions: var(--color7);
+}
+
+.nb-sub-elements{
+    padding: 0.1rem;
+    font-weight: 400;
+    text-align: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    .icon-container{
+        font-size: 0.9rem;
+        span{
+          
+            @include border-radius(1.1rem);
+            font-size: 0.55;
+            display: inline-block;
+            padding: 0.1rem 0.15rem 0.1rem 0.25rem;
+        }
+
+        &.nb-empty{
+            color: #aaa;
+        }
+        &.nb-some{
+            color: var(--color-interventions);
+
+           
+        }
+
+        .arbo{
+            display: inline-block;
+            svg{
+                transform: rotate(90deg);
+                vertical-align: middle;
+            }
+        } 
+        .nb-items{
+            &.signalements{
+                background-color: var(--color-signalements);
+                color: #fff;
+                padding-right: 15px;
+                &.i0{
+                    padding-right: 5px;
+                }
+
+                & + .nb-items.interventions{
+                   display: inline-block;
+                   margin-left: -12px;
+                   @include border-radius4(0,1.1rem,1.1rem,0);
+                }
+                svg{
+                    margin-left: 0.1rem;
+                    margin-bottom: 0.1rem;
+                }
+               
+            }
+            &.interventions{
+                background-color: var(--color-interventions);
+                color: #fff;
+                &.sn.i0{
+                    color: #aaa;
+                    background-color: transparent;
+                    margin-left: 0px;
+                }
+            }
+            svg{
+                margin-bottom: 0.1rem;
+            }
+        }
+
+        &.nb-empty .nb-items{
+            &.signalements{
+                color: #aaa;
+                background-color: transparent;
+            }
+            &.interventions.s0.i0{
+                color: #aaa;
+                background-color: transparent;
+                margin-left: 0;
+            }
+        }
+
+    }
+
+}

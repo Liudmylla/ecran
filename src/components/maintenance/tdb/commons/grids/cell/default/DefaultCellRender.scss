@@ -1,0 +1,29 @@
+.cell-default-render{
+
+    position: relative;
+    padding: 0.2rem 0 0 0.2rem;
+    font-size: 0.9rem;
+    color: #777;
+    &.editable{
+        color: #000;
+        cursor: pointer;
+    }
+    .cell-default-render-icon-lock{
+        position: absolute;
+        top: 0px;
+        left: -5px;
+        svg{
+            color: #aaa;
+        }
+       
+    }
+}
+
+.grid-tdb-intervention{
+    .cell-default-render{
+        padding: 0.2rem 0 0 0.9rem;
+        .cell-default-render-icon-lock{
+            left: 1px;
+        }
+    }
+}

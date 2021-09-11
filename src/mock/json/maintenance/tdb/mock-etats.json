@@ -1,0 +1,13 @@
+{
+
+    "lstEtats" : [
+
+        {"id":1 ,"name":"Nouveau SIGNALEMENT", "color":"#3357cd"},
+        {"id":2 ,"name":"Pris en compte", "color":"#339ecd"},
+        {"id":3 ,"name":"Créer une intervention", "color":"#6233cd"},
+        {"id":4 ,"name":"En Cours", "color":"#b2cd33"},
+        {"id":5 ,"name":"Fait", "color":"#54cd33"},
+        {"id":6 ,"name":"Bloqué", "color":"#cd4233"}
+
+    ] 
+}

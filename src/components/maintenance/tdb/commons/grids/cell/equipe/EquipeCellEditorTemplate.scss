@@ -1,0 +1,68 @@
+@import "./../../../../../../common.scss";
+
+.equipe-cell-editor {
+    // border: solid 1px #fc0;
+    font-size: 1rem;
+}
+
+.equipe-cell-editor-item {
+    padding: 0 0 0.2rem 0;
+    border-bottom: dashed 1px #ccc;
+
+    &.selected{
+        background-color: #eee
+    }
+
+    .equipe-nom{
+        background-color: #ccc;
+       // @include border-radius(1.1rem);
+        font-size: 0.8rem;
+        padding: 0.1rem 0.3rem;
+        position: relative;
+    }
+    .equipe-cell-editor-avatars {
+
+        text-align: center;
+    }
+}
+
+.drop-down-equipes {
+
+    .dx-texteditor-input-container,
+    .dx-texteditor-buttons-container{
+        display: none;
+    }
+    min-height: 29px;
+}
+
+.list-equipe-dropdown{
+
+    height: 108%;
+    overflow: auto;
+    margin: -0.8rem -0.8rem  -1.8rem -0.8rem;
+    .equipe-cell-editor-item {
+        &:hover{
+            background-color: #dfdfdf;
+            cursor: pointer;
+        }
+    }
+}
+
+.dx-datagrid-content .dx-row .dx-editor-cell .dx-dropdowneditor{
+   
+    background-color: #ddd;
+}
+
+.editor-drop-down-equipes{
+    position: relative;
+    //border: solid 3px #714;
+    max-height: 20px;
+    .caption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: -40px;
+    }
+}

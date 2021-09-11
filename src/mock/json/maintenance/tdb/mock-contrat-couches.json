@@ -1,0 +1,580 @@
+{ 
+	"lstContratCouche" : [
+	
+	{ 	"id":531,
+		"libelle": "Panne foyer",
+		"fiche": {
+        "lstOnglet": [
+            {
+                "id": 0,
+                "icon": "fa fa-bell-o",
+                "title": "Détails du signalement",
+                "lstThemeMetier": [
+                    {
+                        "id": 0,
+                        "title": "Echéance",
+                        "lstLignes": [
+                            {
+                                "id": 0,
+                                "format": "T_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 13,
+                                            "type": "FILE",
+                                            "libelle": "Echange mail",
+                                            "options": {},
+                                            "codeUser": "ECHANGEMAIL",
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": true,
+                                                "visuNePasEcraser": false,
+                                                "isVisibleInSearch": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [
+                                        {
+                                            "id": 2,
+                                            "type": "CHOIX_SIMPLE",
+                                            "libelle": "Niveau d'urgence",
+                                            "options": {
+                                                "Urgent < 4 h": "1",
+                                                "Normal < 72 h": "3",
+                                                "Normal < 48 h ": "2"
+                                            },
+                                            "codeUser": "NIVEAUDURGEN",
+                                            "parametresOptions": {
+                                                "nextOptionId": 4
+                                            },
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": true,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "2": [],
+                                    "3": []
+                                }
+                            }
+                        ],
+                        "colorBorder": "",
+                        "colorBackground": "#FFFFFF"
+                    },
+                    {
+                        "id": 0,
+                        "title": "Informations du signalement",
+                        "lstLignes": [
+                            {
+                                "id": 0,
+                                "format": "D_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 5,
+                                            "type": "CHOIX_SIMPLE",
+                                            "libelle": "Signalement effectué par : ",
+                                            "options": {
+                                                "Mairie": "1",
+                                                "Police": "1",
+                                                "Administré": "4",
+                                                "Agent du SDE": "3",
+                                                "Agent de maintenance": "2"
+                                            },
+                                            "codeUser": "SIGNALEMENTE",
+                                            "parametresOptions": {
+                                                "nextOptionId": 5
+                                            },
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        },
+                                        {
+                                            "id": 8,
+                                            "type": "CHOIX_SIMPLE",
+                                            "libelle": "Demande effectuée via :",
+                                            "options": {
+                                                "Fax": "2",
+                                                "SIG": "1",
+                                                "email": "3",
+                                                "Téléphone": "1"
+                                            },
+                                            "codeUser": "DEMANDEEFFEC",
+                                            "parametresOptions": {
+                                                "nextOptionId": 4
+                                            },
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [
+                                        {
+                                            "id": 6,
+                                            "type": "ALPHA_NUMERIC",
+                                            "libelle": "Contact",
+                                            "options": {},
+                                            "codeUser": "TLPHONE",
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        },
+                                        {
+                                            "id": 9,
+                                            "type": "TELEPHONE",
+                                            "libelle": "Téléphone",
+                                            "options": {},
+                                            "codeUser": "TLPHONE",
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": true,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "2": [],
+                                    "3": []
+                                }
+                            }
+                        ],
+                        "colorBorder": "",
+                        "colorBackground": "#FFFFFF"
+                    },
+                    {
+                        "id": 0,
+                        "title": "Description de la Panne",
+                        "lstLignes": [
+                            {
+                                "id": 0,
+                                "format": "D_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 10,
+                                            "type": "CHOIX_SIMPLE",
+                                            "libelle": "Type de Panne",
+                                            "options": {
+                                                "Autres": "4",
+                                                "Rue(s) en panne(s)": "3",
+                                                "Tournée de Vérification": "5",
+                                                "Foyer(s) Lumineux éteint(s)": "1",
+                                                "Foyer(s) lumineux qui clignot(ent)": "2"
+                                            },
+                                            "codeUser": "TYPEDEPANNE",
+                                            "parametresOptions": {
+                                                "nextOptionId": 6
+                                            },
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [
+                                        {
+                                            "id": 11,
+                                            "type": "CHOIX_SIMPLE",
+                                            "libelle": "Cause de la Panne",
+                                            "options": {
+                                                "Accident": "1",
+                                                "Vandalisme": "3",
+                                                "Indéfinie(s)": "1",
+                                                "Défaut réseaux EP": "2",
+                                                "Catastrophe naturelle": "4"
+                                            },
+                                            "codeUser": "CAUSEDELAPAN",
+                                            "parametresOptions": {
+                                                "nextOptionId": 5
+                                            },
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "2": [],
+                                    "3": []
+                                }
+                            },
+                            {
+                                "id": 0,
+                                "format": "U_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 12,
+                                            "type": "ALPHA_NUMERIC",
+                                            "libelle": "Description de la panne",
+                                            "options": {},
+                                            "codeUser": "DESCRIPTIOND",
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [],
+                                    "2": [],
+                                    "3": []
+                                }
+                            }
+                        ],
+                        "colorBorder": "",
+                        "colorBackground": "#FFFFFF"
+                    }
+                ]
+            }
+        ],
+        "idAutoSuivant": 14
+    }
+},
+{ 	"id":548,
+		"libelle": "Fiche de signalement Armoire",
+		"fiche": {
+        "lstOnglet": [
+            {
+                "id": 0,
+                "icon": "fa fa-calculator",
+                "title": "Détails du signalement",
+                "lstThemeMetier": [
+                    {
+                        "id": 0,
+                        "title": "Informations de contacts",
+                        "lstLignes": [
+                            {
+                                "id": 0,
+                                "format": "U_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 1,
+                                            "type": "CHOIX_SIMPLE",
+                                            "libelle": "Niveau d'urgence",
+                                            "options": {
+                                                "4 - Prochaine Visite": "3",
+                                                "1 - Normal : 15 jours": "4",
+                                                "2 - Quartier / Rue éteinte : 4 jours": "1",
+                                                "3 - Accident / Mise en sécurité : 4 heures": "2"
+                                            },
+                                            "codeUser": "NIVEAUDURGEN",
+                                            "parametresOptions": {
+                                                "nextOptionId": 5
+                                            },
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "nePasEcraser": false,
+                                                "isObligatoire": true,
+                                                "visuInfoBulle": true,
+                                                "isSaisieRapide": true,
+                                                "visuNePasEcraser": false,
+                                                "isVisibleInSearch": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [],
+                                    "2": [],
+                                    "3": []
+                                }
+                            },
+                            {
+                                "id": 0,
+                                "format": "D_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 2,
+                                            "type": "COMPOSITE",
+                                            "libelle": "",
+                                            "options": {
+                                                "idComposite": "5",
+                                                "libelleComposite": "Composite Signalement Contacts + description de la panne"
+                                            },
+                                            "codeUser": "",
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false,
+                                                "isVisibleInSearch": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [],
+                                    "2": [],
+                                    "3": []
+                                }
+                            }
+                        ],
+                        "colorBorder": "",
+                        "colorBackground": ""
+                    }
+                ]
+            }
+        ],
+        "idAutoSuivant": 3
+    }
+	},
+	{ 	"id":530,
+		"libelle": "Dossier de maintenance",
+		"fiche": {}
+	},
+	{
+	"id":532,
+		"libelle": "Intervention foyer",
+    "fiche": {
+        "lstOnglet": [
+            {
+                "id": 0,
+                "icon": "fa fa-calculator",
+                "title": "Détails de l'intervention",
+                "lstThemeMetier": [
+                    {
+                        "id": 0,
+                        "title": "",
+                        "lstLignes": [
+                            {
+                                "id": 0,
+                                "format": "T_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 3,
+                                            "type": "CHOIX_SIMPLE",
+                                            "libelle": "Etat du dépannage",
+                                            "options": {
+                                                "Terminé": "2",
+                                                "En cours ": "1",
+                                                "planifié": "3"
+                                            },
+                                            "codeUser": "ETATDUDPANNA",
+                                            "parametresOptions": {
+                                                "nextOptionId": 4
+                                            },
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": true,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [
+                                        {
+                                            "id": 2,
+                                            "type": "DATE",
+                                            "libelle": "Date de l'intervention ",
+                                            "options": {},
+                                            "codeUser": "DATEDELINTER",
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": true,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "2": [
+                                        {
+                                            "id": 1,
+                                            "type": "CHOIX_SIMPLE",
+                                            "libelle": "Type de maintenance",
+                                            "options": {
+                                                "Maintenance Curative": "1",
+                                                "Maintenance Préventive": "2"
+                                            },
+                                            "codeUser": "TYPEDEMAINTE",
+                                            "parametresOptions": {
+                                                "nextOptionId": 3
+                                            },
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "3": []
+                                }
+                            }
+                        ],
+                        "colorBorder": "",
+                        "colorBackground": ""
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "icon": "fa fa-inbox",
+                "title": "Signalement",
+                "lstThemeMetier": [
+                    {
+                        "id": 0,
+                        "title": "",
+                        "lstLignes": [
+                            {
+                                "id": 0,
+                                "format": "U_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 4,
+                                            "type": "FILE",
+                                            "libelle": "Historique de Signalement",
+                                            "options": {},
+                                            "codeUser": "HISTORIQUEDE",
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [],
+                                    "2": [],
+                                    "3": []
+                                }
+                            }
+                        ],
+                        "colorBorder": "",
+                        "colorBackground": "#FFFFFF"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "icon": "fa fa-inbox",
+                "title": "Documents",
+                "lstThemeMetier": [
+                    {
+                        "id": 0,
+                        "title": "",
+                        "lstLignes": [
+                            {
+                                "id": 0,
+                                "format": "U_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 5,
+                                            "type": "FILE",
+                                            "libelle": "Documents disponibles",
+                                            "options": {},
+                                            "codeUser": "DOCUMENTSDIS",
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [],
+                                    "2": [],
+                                    "3": []
+                                }
+                            }
+                        ],
+                        "colorBorder": "",
+                        "colorBackground": "#FFFFFF"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "icon": "fa fa-paint-brush",
+                "title": "Notes",
+                "lstThemeMetier": [
+                    {
+                        "id": 0,
+                        "title": "",
+                        "lstLignes": [
+                            {
+                                "id": 0,
+                                "format": "U_EQUALS",
+                                "mapLstAttributs": {
+                                    "0": [
+                                        {
+                                            "id": 6,
+                                            "type": "ALPHA_NUMERIC",
+                                            "libelle": "",
+                                            "options": {},
+                                            "codeUser": "",
+                                            "parametresSysteme": {
+                                                "isVisible": true,
+                                                "visuNomade": true,
+                                                "isObligatoire": false,
+                                                "visuInfoBulle": false,
+                                                "isSaisieRapide": false,
+                                                "visuNePasEcraser": false
+                                            }
+                                        }
+                                    ],
+                                    "1": [],
+                                    "2": [],
+                                    "3": []
+                                }
+                            }
+                        ],
+                        "colorBorder": "",
+                        "colorBackground": "#FFFFFF"
+                    }
+                ]
+            }
+        ],
+        "idAutoSuivant": 8
+    }
+}
+]
+}

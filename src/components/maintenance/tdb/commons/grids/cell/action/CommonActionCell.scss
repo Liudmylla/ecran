@@ -1,0 +1,70 @@
+.grid-action-cell-qm {
+    //border: solid 3px #f00;
+    .btn {
+        // border: solid 3px rgb(0, 38, 255);
+        padding: 0;
+        background-color: transparent;
+        color: #333;
+        border: none;
+        box-shadow: none;
+      
+
+        &:hover, &:active, &:focus, &:focus-visible{
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            svg{
+                color: #f60;
+            }
+        }
+        svg {
+            transform: rotate(90deg);
+            vertical-align: middle;
+        }
+    }
+
+    &.intervention{
+        .btn{
+            min-height: 24px;
+            line-height: 19px;
+        }
+    }
+}
+
+.action-cell-qm-popover {
+    //border: solid 2px #e8e;
+    background-color: #ddd;
+    .popover-body {
+        padding: 0;
+    }
+
+    .arrow{
+        visibility: hidden; // pas le temps de caler la flèche
+        // &::after{ border-bottom-color: #ddd;}
+        // &::before{ border-bottom-color: #ddd;}
+       // background-color: #ddd;
+    }
+
+    .action-cell-qm-content {
+        //border: solid 2px rgb(139, 199, 83);
+
+        padding: 0.2rem 0.2rem;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                margin: 0 0 0.2rem 0;
+                padding: 0;
+                .btn {
+                    width: 100%;
+                    padding: 0.1rem 0.2rem;
+                    font-size: 0.9rem;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+
+
+@import "./../../../../../../common.scss";
+
+.etat-cell-editor {
+    // border: solid 1px #fc0;
+    font-size: 1rem;
+}
+
+.etat-cell-editor-item {
+    padding: 0 0 0.2rem 0;
+   // border-bottom: dashed 1px #ccc;
+
+    &.selected{
+        background-color: #eee
+    }
+
+}
+
+.drop-down-etats {
+
+    .dx-texteditor-input-container,
+    .dx-texteditor-buttons-container{
+        display: none;
+    }
+    min-height: 29px; 
+}
+
+.list-etat-dropdown{
+    margin: -0.8rem -0.8rem  -0.8rem -0.8rem;
+    .etat-cell-item{
+
+        &:hover{
+            cursor: pointer;
+            @include box-shadow(0.1rem, 0.1rem, 0.1rem, #aaa);
+        }
+    }
+}
+
+.dx-datagrid-content .dx-row .dx-editor-cell .dx-dropdowneditor{
+   
+    background-color: #ddd;
+}
+
+.editor-drop-down-etats{
+    position: relative;
+    //border: solid 3px #714;
+    max-height: 20px;
+    .caption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: -40px;
+    }
+}

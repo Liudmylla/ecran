@@ -1,0 +1,772 @@
+{
+    "lstDossiers": [
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(895894.14 6622579.26)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Dépannage ",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-09-01T17:14:56+02",
+        "dateModification": "2020-09-01T00:00:00+02",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 135
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 31,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POLYGON((871733.8750787238 6644970.715262707,918930.7 6660083,924259.8409740508 6662558.595245758,931627.7366426261 6650674.892554508,940659.3506879765 6643544.670939757,948264.9204103767 6634750.730948232,939946.3285265014 6625481.442849056,880290.141016424 6618113.547180481,871733.8750787238 6644970.715262707))",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "rue bidule",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-06-16T17:03:20+02",
+        "dateModification": "2020-06-16T00:00:00+02",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 128
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 36,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POLYGON((871733.8750787238 6644970.715262707,918930.7 6660083,924259.8409740508 6662558.595245758,931627.7366426261 6650674.892554508,940659.3506879765 6643544.670939757,948264.9204103767 6634750.730948232,939946.3285265014 6625481.442849056,880290.141016424 6618113.547180481,871733.8750787238 6644970.715262707))",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Dossier rue bidule",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-06-30T17:14:33+02",
+        "dateModification": "2020-06-30T00:00:00+02",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 132
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 41,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POLYGON((871733.8750787238 6644970.715262707,918930.7 6660083,924259.8409740508 6662558.595245758,931627.7366426261 6650674.892554508,940659.3506879765 6643544.670939757,948264.9204103767 6634750.730948232,939946.3285265014 6625481.442849056,880290.141016424 6618113.547180481,871733.8750787238 6644970.715262707))",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Dossier rue TesttCG",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-10-28T11:13:46+01",
+        "dateModification": "2020-10-28T11:13:46+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 141
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(907197.091003637 6633683.85342626)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Panne 03/11/2020",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-11-03T11:52:57+01",
+        "dateModification": "2020-11-03T11:52:57+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 145
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 41,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POLYGON((871733.8750787238 6644970.715262707,918930.7 6660083,924259.8409740508 6662558.595245758,931627.7366426261 6650674.892554508,940659.3506879765 6643544.670939757,948264.9204103767 6634750.730948232,939946.3285265014 6625481.442849056,880290.141016424 6618113.547180481,871733.8750787238 6644970.715262707))",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "dossier test CG / panne rue de l\u0027éqglise",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-10-21T15:55:04+02",
+        "dateModification": "2020-10-21T15:55:05+02",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 138
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(907192.835264883 6633666.54948164)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "DOS 12345 - SIGN",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-11-03T16:19:03+01",
+        "dateModification": "2020-11-03T16:19:03+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 148
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(907330.132988384 6633584.78533565)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "SIGN - 123456",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-11-03T17:14:32+01",
+        "dateModification": "2020-11-03T17:14:32+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 151
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(0 0)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Panne foyer",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-11-05T10:14:25+01",
+        "dateModification": "2020-11-05T10:14:25+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 156
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(0 0)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Panne foyer",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-12-10T12:14:19+01",
+        "dateModification": "2020-12-10T12:14:19+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 162
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(888939.471311528 6660680.74207287)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "AUDIT UX",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-12-10T09:25:47+01",
+        "dateModification": "2020-12-10T09:25:47+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 160
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(0 0)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "SIGNALEMENT FOYER",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-12-11T12:35:53+01",
+        "dateModification": "2020-12-11T12:35:53+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 164
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(888645.734148366 6660677.04794491)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Panne rue bidule",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-12-16T09:19:13+01",
+        "dateModification": "2020-12-16T09:19:13+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 166
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(907986.90283486 6599759.6303103)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "Panne commuen de Charchill",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-12-22T10:01:17+01",
+        "dateModification": "2020-12-22T10:01:17+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 168
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(908354.252599063 6620990.56670859)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "CHATILLON / Panne Foyer",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-12-22T10:04:42+01",
+        "dateModification": "2020-12-22T10:04:42+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 169
+      },
+      {
+        "listeSignalement": null,
+        "lot": null,
+        "dateEcheance": null,
+        "typeMaint": "DOSSIER",
+        "tsDuree": null,
+        "recurrence": null,
+        "workflow": null,
+        "etat": null,
+        "etatIdUser": 0,
+        "historiqueEtat": null,
+        "isEtatFinal": false,
+        "idEquipe": 0,
+        "idUser": 0,
+        "idParent": 0,
+        "listeIdObjet": null,
+        "listeIdFils": null,
+        "nbFils": 0,
+        "json_Recherche": "{}",
+        "contratCouche": {
+          "left": null,
+          "right": null,
+          "idLeft": 0,
+          "idRight": 0,
+          "id": 530
+        },
+        "idStyle": 0,
+        "theGeom": {
+          "srid": 2154,
+          "wktDef": "POINT(915279.901162182 6610128.66515299)",
+          "con": null
+        },
+        "lstAttributs": [
+          {
+            "value": "LAC / Panne Foyer",
+            "lstAttributs": null,
+            "options": null,
+            "id": -1
+          }
+        ],
+        "mapAttributFileValue": null,
+        "lstIdFilesToDelete": null,
+        "dateCreation": "2020-12-22T10:07:22+01",
+        "dateModification": "2020-12-22T10:07:22+01",
+        "dateSuppression": null,
+        "defaultLanguage": null,
+        "id": 170
+      }
+    ]
+  }

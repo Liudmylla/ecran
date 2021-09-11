@@ -1,0 +1,132 @@
+
+
+
+
+:root {
+	--color1: #fff;
+	--color1-dark: #eee;
+	--color2: #9eaab6;
+	--color2-light: #b8c2cc;
+	--color3: #da6900;
+	--color4: #333;
+	--color5: #000;
+	--color6: #0174be;
+	--color7: #03468d;
+	--color8: #0f284c;
+	--color9: #0a1c36;
+	--color-ok: #55cc11;
+	--color-ko: #dd3300;
+	--color-background-panel: var(--color1);
+	--color-background-panel-info: var(--color2-light);
+	--color-background-panel-elements: var(--color2);
+	--color-titre: var(--color1);
+	--color-text: var(--color5);
+	--color-text-panel: var(--color4);
+	--color-text-panel-info: var(--color4);
+	--color-text-hover: var(--color3);
+	--color-navigation: var(--color6);
+	--color-navigation-secondaire: var(--color2);
+	--color-button-text: var(--color1);
+	--color-primary-b: var(--color6);
+	--color-secondary-b: var(--color2);
+	--color-refus-b: var(--color-refus);
+	--color-signature-b: var(--color-signature);
+	--color-background1:  var(--color8);
+	--color-background1-shadow: var(--color9);
+	--color-background2: var(--color7);
+	--color-background-task: var(--color1-dark);
+	--common-font: Tahoma, Geneva, sans-serif;
+
+	--color-loader1 : var(--color3);
+	--color-loader2 : var(--color2);
+
+	
+}
+
+@mixin primary-colors {
+	background-color: var(--color-primary-b);
+	border-bottom-color: var(--color-primary-b);
+	border-color: var(--color-primary-b);
+    color: var(--color-button-text);
+}
+
+@mixin secondary-colors {
+	background-color: var(--color-secondary-b);
+	border-bottom-color: var(--color-secondary-b);
+	border-color: var(--color-secondary-b);
+    color: var(--color-button-text);
+}
+
+
+@mixin foreground-panel {
+	background-color: var(--color-background-panel);
+    color: var(--color-text-panel);
+    font-family: var(--common-font);
+    padding: 1.5rem;
+    margin: 1rem;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    @include border-radius(0.25rem);
+    @include box-shadow(0.1rem, 0.2rem, 0.3rem, var(--color-background1-shadow))
+}
+
+@mixin foreground-panel-info {
+	background-color: var(--color-background-panel-info);
+    color: var(--color-text-panel-info);
+    font-family: var(--common-font);
+    padding: 1.5rem;
+    margin: 1rem;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    @include border-radius(0.25rem);
+    @include box-shadow(0.1rem, 0.2rem, 0.3rem, var(--color-background1-shadow))
+}
+
+
+@mixin box-shadow($left, $top, $radius, $col) {
+	box-shadow: $left $top $radius 0px  $col;
+	-webkit-box-shadow: $left $top $radius 0px $col;
+	-moz-box-shadow: $left $top $radius 0px $col;
+}
+
+@mixin transition($property, $duration, $easing: linear) {
+	transition: $property $duration $easing;
+	-webkit-transition: $property $duration $easing;
+	-moz-transition: $property $duration $easing;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin border-radius4($r1,$r2,$r3,$r4) {
+	border-radius: $r1 $r2 $r3 $r4;
+	-webkit-border-radius:  $r1 $r2 $r3 $r4;
+	-moz-border-radius:  $r1 $r2 $r3 $r4;
+}
+
+
+@mixin gradient($col1, $col2) {
+	background-color: $col1;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$col1}, endColorstr=#{$col2});
+	background-image: -moz-linear-gradient(center top, $col1, $col2);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($col1), to($col2));
+}
+
+@keyframes blink {
+	0% {background-color:  var(--color-text-hover);}
+	100% {background-color:  var(--color-background-panel-elements);}
+}
+@-webkit-keyframes blink {
+	0% {background-color:  var(--color-text-hover);}
+	100% {background-color:  var(--color-background-panel-elements);}
+}
+
+@mixin blinkn($nb) {
+	-webkit-animation: blink 0.5s linear $nb;
+	-moz-animation: blink 0.5s linear $nb;
+	animation: blink 0.5s linear $nb;
+	color: var(--color-text);
+}

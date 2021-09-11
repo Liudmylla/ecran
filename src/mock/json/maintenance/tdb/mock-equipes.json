@@ -1,0 +1,29 @@
+{
+    "lstEquipes" : [
+
+        {"id":0, "nom":"Equipe 1", "compositionIdList": [0,1]},
+        {"id":1, "nom":"Equ. 2", "compositionIdList": [2]},
+        {"id":2, "nom":"Equipe Sud", "compositionIdList": [3]},
+        {"id":3, "nom":"Equipe Centre", "compositionIdList": [9,0,11]},
+        {"id":4, "nom":"Equipe Nord", "compositionIdList": [4,5,10]},
+        {"id":5, "nom":"Equipe Astreinte", "compositionIdList": [6]},
+        {"id":6, "nom":"Equ. 7", "compositionIdList": [7,8]},
+        {"id":7, "nom":"Equ. 8", "compositionIdList": [9]}
+    ],
+
+
+    "lstMembers" : [
+        { "id": 0 , "nom" : "Hugh Grant", "pict" : "p01.jpg", "color" : "#ccc" },
+        { "id": 1 , "nom" : "Henry Glding", "pict" : "p02.jpg", "color" : "#aaa" },
+        { "id": 2 , "nom" : "Colin Farell", "pict" : "p03.jpg", "color" : "#eee" },
+        { "id": 3 , "nom" : "Matthew McConaughey", "pict" : "p04.jpg", "color" : "#ddd" },
+        { "id": 4 , "nom" : "Charlie Hunnam", "pict" : "p05.jpg" },
+        { "id": 5 , "nom" : "Michelle Dockery", "pict" : "p06.jpg" },
+        { "id": 6 , "nom" : "Jeremy Strong", "pict" : "p07.jpg" },
+        { "id": 7 , "nom" : "Nick Moran", "pict" : "p08.jpg", "color" : "#4f5'" },
+        { "id": 8 , "nom" : "Vinie Jones", "pict" : "p09.jpg", "color" : "#333" },
+        { "id": 9 , "nom" : "Jason Statham", "pict" : "p10.jpg", "color" : "#a08" },
+        { "id": 10 , "nom" : "Robert Downey", "color" : "#f04" },
+        { "id": 11 , "nom" : "Jude Law", "color" : "#aaf" }
+    ]
+}
