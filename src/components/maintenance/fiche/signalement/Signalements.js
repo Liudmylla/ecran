@@ -1,32 +1,27 @@
-import React, { useState } from 'react'
-import dossierJson from '../../../../mock/json/maintenance/fiche/mock-dossier.json'
-import Signalement from './Signalement'
+import React, { useState } from "react";
+import dossierJson from "../../../../mock/json/maintenance/fiche/mock-dossier.json";
+import Signalement from "./Signalement";
 
 const Signalements = () => {
-  const initialState = dossierJson.listeSignalement
-  const [listeSignalement, setListeSignalement] = useState(initialState)
-  const handleSelect = (id) => {
-    setListeSignalement(
-      listeSignalement.filter((signalement) => signalement.id === id),
-    )
-  }
-  const handleReset = () => {
-    setListeSignalement(initialState)
-  }
+  const initialState = dossierJson.listeSignalement;
+  const [listeSignalement, setListeSignalement] = useState(initialState);
+
+  const handleToggleActive = (id) => {
+    const newListeSignalement = [...listeSignalement];
+    const index = newListeSignalement.findIndex((item) => item.id === id);
+    newListeSignalement[index].isActive = !newListeSignalement[index].isActive;
+    setListeSignalement(newListeSignalement);
+  };
 
   return (
     <>
       <ul>
         {listeSignalement.map((signalement) => (
-          <Signalement 
-         onSelect= {handleSelect}
-         onReset = {handleReset}
-         signalement ={signalement}
-          />
+          <Signalement onToggleActive={handleToggleActive} {...signalement} />
         ))}
       </ul>
     </>
-  )
-}
+  );
+};
 
-export default Signalements
+export default Signalements;
